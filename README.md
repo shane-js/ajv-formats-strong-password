@@ -78,5 +78,32 @@ ajv.addStrongPasswordFormat({
     ajvInstance: ajv,
     passwordCriteria: myPasswordCriteriaObj
 });
+```
 
+## use
+
+After adding it to your ajv instance use it just as you would any other ajv format.
+
+Example:
+
+```
+const exampleAjvSchema = {
+  type: "object",
+  properties: {
+    password: { type: "string", format: "strong-password" },
+  },
+  required: ["password"],
+};
+```
+
+You can combine it with things like maxLength if you want to set limits outside of the scope of password strength enforcement:
+
+```
+const exampleAjvSchema = {
+type: "object",
+properties: {
+password: { type: "string", format: "strong-password", maxLength: 50 },
+},
+required: ["password"],
+};
 ```
