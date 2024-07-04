@@ -100,10 +100,10 @@ You can combine it with things like maxLength if you want to set limits outside 
 
 ```
 const exampleAjvSchema = {
-type: "object",
-properties: {
-password: { type: "string", format: "strong-password", maxLength: 50 },
-},
-required: ["password"],
+  type: "object",
+  properties: {
+    password: { type: "string", format: "strong-password", maxLength: 50 },
+  },
+  required: ["password"],
 };
 ```
