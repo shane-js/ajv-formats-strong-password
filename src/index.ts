@@ -4,6 +4,7 @@ import {
   defaultLowerCharacters,
   defaultDigitCharacters,
   defaultSpecialCharacters,
+  generatePasswordStrengthValidator,
 } from "./addStrongPasswordFormat";
 
 export default addStrongPasswordFormat;
@@ -12,4 +13,5 @@ export {
   defaultLowerCharacters,
   defaultDigitCharacters,
   defaultSpecialCharacters,
+  generatePasswordStrengthValidator,
 };
