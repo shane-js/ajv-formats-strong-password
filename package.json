@@ -1,6 +1,6 @@
 {
   "name": "ajv-formats-strong-password",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easy way to add configurable strong password format to ajv to use in schema validations",
   "files": [
     "dist",
