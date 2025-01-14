@@ -29,7 +29,7 @@ const countCharacters = (str: string, characters: string): number => {
   return count;
 };
 
-const generatePasswordStrengthValidator = ({
+export const generatePasswordStrengthValidator = ({
   minUpper = 0,
   minLower = 0,
   minDigit = 0,
